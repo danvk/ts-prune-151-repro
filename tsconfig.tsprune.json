@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "declaration": true,
+    "lib": [
+      "esnext"
+    ],
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "./node_modules",
+  ],
+  "files": [
+    "./entry.ts"
+  ]
+}

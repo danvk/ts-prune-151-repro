@@ -1,0 +1,11 @@
+{
+  "name": "ts-prune-151-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dan Vanderkam <danvdk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-prune": "^0.10.1",
+    "typescript": "^4.4.4"
+  }
+}
