@@ -1,23 +1,17 @@
 {
+  // This tsconfig explicitly lists all entrypoints to our server & client code,
+  // which facilitates finding dead code. (See "files" at the bottom.)
+  "exclude": [
+    "node_modules"
+  ],
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "declaration": true,
-    "lib": [
-      "esnext"
-    ],
-    "esModuleInterop": true
+    // Node uses the commonjs module format
+    "target": "es6",
+    "outDir": "./dist",
+    "baseUrl": ".",
   },
   "files": [
-    "src/index.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "server/server.ts",
   ]
 }
