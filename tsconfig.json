@@ -1,12 +1,9 @@
 {
-  // This tsconfig explicitly lists all entrypoints to our server & client code,
-  // which facilitates finding dead code. (See "files" at the bottom.)
   "exclude": [
     "node_modules"
   ],
   "compilerOptions": {
     "module": "commonjs",
-    // Node uses the commonjs module format
     "target": "es6",
     "outDir": "./dist",
     "baseUrl": ".",
